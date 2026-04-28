@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio - Analista de Dados</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #22c55e;
+}
+
+.hero h2 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #22c55e;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #16a34a;
+}
+
+.hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #22c55e;
+}
+
+/* SEÇÕES */
+section {
+    margin-top: 60px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #22c55e;
+}
+
+/* SOBRE */
+.sobre {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.highlight {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #22c55e;
+}
+
+/* HABILIDADES */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* PROJETOS */
+.projetos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    background: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+}
+
+.projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.projeto-content {
+    padding: 15px;
+}
+
+/* CONTATO */
+.contato a {
+    display: block;
+    margin: 10px 0;
+    color: #22c55e;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 20px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1><!-- SEU NOME --> Gustavo Web</h1>
+        <h2>Especialista em Power BI</h2>
+        <p>
+            <!-- DESCRIÇÃO CURTA -->
+            Transformo dados em decisões estratégicas através de dashboards modernos,
+            claros e orientados a resultados.
+        </p>
+        <a href="#sobre" class="btn">Sobre mim</a>
+    </div>
+
+    <!-- FOTO DE PERFIL -->
+    <img src="Foto Perfil.jpg" alt="Foto de Perfil">
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+    <h2 class="section-title">Sobre</h2>
+    <div class="sobre">
+        <p>
+            <!-- TEXTO SOBRE VOCÊ -->
+            Profissional em transição para a área de dados, com foco em análise,
+            visualização e criação de dashboards interativos utilizando Power BI,
+            Excel e boas práticas de BI.
+        </p>
+
+        <div class="highlight">
+            Iniciante em transição de carreira
+        </div>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section>
+    <h2 class="section-title">Habilidades</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Power BI</h3>
+            <p>Criação de dashboards interativos e modelagem de dados.</p>
+        </div>
+
+        <div class="card">
+            <h3>Excel</h3>
+            <p>Análise de dados, tabelas dinâmicas e automação.</p>
+        </div>
+
+        <div class="card">
+            <h3>Análise de Dados</h3>
+            <p>Transformação de dados em insights estratégicos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJETOS -->
+<section>
+    <h2 class="section-title">Projetos</h2>
+
+    <div class="projetos">
+
+        <!-- PROJETO 1 -->
+        <div class="projeto">
+            <img src="Covid.png" alt="Projeto Covid">
+            <div class="projeto-content">
+                <h3>Dashboard Covid</h3>
+                <p>Análise global de casos, mortes e vacinação com visualizações interativas.</p>
+                <a href="https://drive.google.com/drive/folders/16iFv3-RePU5hjVDrxrmwBSP_VRyxlSSJ?usp=sharing" target="_blank" class="btn">Ver detalhes</a>
+            </div>
+        </div>
+
+        <!-- PROJETO 2 -->
+        <div class="projeto">
+            <img src="Vendas.png" alt="Projeto Vendas">
+            <div class="projeto-content">
+                <h3>Dashboard de Vendas</h3>
+                <p>Análise de faturamento, categorias e performance por região.</p>
+                <a href="https://drive.google.com/drive/folders/1reZkKy_XkdYxtvdN8ZLzoOcOZeEoKdeu?usp=sharing" target="_blank" class="btn">Ver detalhes</a>
+            </div>
+        </div>
+
+        <!-- PROJETO 3 -->
+        <div class="projeto">
+            <img src="Logistica.png" alt="Projeto Logística">
+            <div class="projeto-content">
+                <h3>Dashboard Logístico</h3>
+                <p>Controle de entregas, produtos e distribuição por cidades.</p>
+                <a href="https://drive.google.com/drive/folders/1oS2MnTg_NYyJKs_Uum2f4WSogvXW0XNd?usp=sharing" target="_blank" class="btn">Ver detalhes</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section>
+    <h2 class="section-title">Contato</h2>
+
+    <div class="contato">
+        <a href="https://www.linkedin.com/in/gustavoweb" target="_blank">LinkedIn</a>
+        <a href="mailto:contato@gustavoweb.com">Email</a>
+        <a href="https://wa.me/5519999999999" target="_blank">WhatsApp</a>
+    </div>
+</section>
+
+</div>
+
+</body>
+</html>
